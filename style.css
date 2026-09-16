@@ -1,0 +1,43 @@
+/* Cada declaração tem o setor ( quem vai mudar) uma ou varias propiedades (o que vai mudar) e valores (para que vai mudar)*/
+/* Neste caso ele faz a mudança em todos, no exmeplo ele muda todos os h2 */
+h2{
+    color:red;
+    font-size: 40px;
+    /* Se a 1 não for vai a segunda se a segunda também não vai a 3 é puxada etc */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Seletor de classe, é um estilo reutilizavel*/
+.tituloBonito {
+    color: cornflowerblue;
+}
+.textoLegal {
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Seletor de id, usado mais para identificar uma area, a ideia não é reutilizar mas é possivel  */
+#usoDeId {
+    background-color: crimson;
+    color: antiquewhite;
+    width: 400px;
+    height: 200px;
+}
+#idBonita {
+    color: blue;
+}
+.classeBonita {
+    color: red;
+}
+/* Important quebra a regra de prioridade */
+div {
+    color: green !important;
+}
+p {
+    color:pink
+}
+/* Dentro da section nos p, a section não muda (com espaços) */
+section p {
+    color: grey;
+}
+/* No html e no body (separado por virgulas) */
+html, body {
+    margin: 150px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Inserir CSS no HTML. rel- relação entre o link e HTML e href é o arquivo de referencia (externo)-->
+     <!-- Pode inserir direto usando <style><style> colocando dentro código (interno) -->
+    <!-- Por fim coloca dentro de cada um usando por exemplo <h2 style="o código css">xxxxx<h2> (inline)-->
+     <!-- Caso tenha varios para o mesmo setor a ordem é externo->interno->inline -->   
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+</head>
+<body>
+    <!-- class='' pega uma classe do CSS -->
+    <h1 class="tituloBonito">Incluindo o CSS na página</h1>
+    <h2>Teste 12 12</h2>
+    <h2>Outro teste</h2>
+    <h3 style="color:aqua; font-size: 17px;">Ola</h3>
+    <br>
+    <br>
+    <style>
+     article{
+        font-size: 10px;
+        color:rebeccapurple;
+     }
+    </style>
+    <article>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, doloremque.</article>
+    <!-- id='' pega um id do CSS -->
+    <div id="usoDeId">
+        <h3>Lorem, ipsum dolor.</h3>
+        <!-- Dentro tem prioridade-->
+        <h4 class="tituloBonito">Lorem, ipsum.</h4>
+        <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+    </div>
+    <!-- Pode chamar varias classes, se tem o mesmo atributo o mais novo tem prioridade -->
+    <section class="tituloBonito textoLegal">pppp</section>
+    <!-- Id->Class->Tag para um mesmo elemento, exceto se tem o !important -->
+    <div id="idBonita" class="classeBonita">
+
+        <p>Lorem ipsum dolor sit amet.</p>
+
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <section>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </section>
+</body>
+</html>
